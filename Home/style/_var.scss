@@ -1,0 +1,20 @@
+/*******************
+*  VARIABLES FILE  *
+*******************/
+
+/** start: [media] **/
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+/** end: [media] **/
+
+/************************ start: [navbar] ************************/
+$navbar-outer-height: 150px;
+$navbar-inner-height: 60px;
+$navbar-diff-height: $navbar-outer-height - $navbar-inner-height;
+
+$navbar-outer-shadow-length: 15;
+$navbar-inner-shadow-length: 5;
+/************************ end: [navbar] ************************/

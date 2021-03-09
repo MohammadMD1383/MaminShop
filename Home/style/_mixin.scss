@@ -1,0 +1,76 @@
+/****************
+*  MIXINS FILE  *
+****************/
+
+/**
+ * makes element sticky
+ */
+@mixin sticky-top($top) {
+	position: -webkit-sticky;
+	position: sticky;
+	top: $top;
+}
+
+/************** start: [media] **************/
+@mixin media-breakpoint-up($width) {
+	@media (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down($width) {
+	@media (max-width: $width) {
+		@content;
+	}
+}
+
+/************** end: [media] **************/
+
+/********************* start: [transition] *********************/
+@function -generate-transition($props, $time) {
+	$str: "";
+	@each $prop in $props {
+		$str: "#{$str} #{$prop} ease-in-out #{$time},";
+	}
+	@return unquote(str-slice($str, 1, -2));
+}
+
+@mixin transition($props, $time: 0.2s) {
+	-webkit-transition: -generate-transition($props, $time);
+	-moz-transition: -generate-transition($props, $time);
+	-o-transition: -generate-transition($props, $time);
+	transition: -generate-transition($props, $time);
+}
+
+/********************* end: [transition] *********************/
+
+/******************************* start: [shadow] *******************************/
+@mixin -shadow-base($x, $y, $blur, $spread, $color) {
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	-moz-box-shadow: $x $y $blur $spread $color;
+	-o-box-shadow: $x $y $blur $spread $color;
+	box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin shadow($length, $color: #DDD) {
+	@include -shadow-base(0, 0, #{$length}px, #{$length/2}px, $color);
+}
+
+@mixin shadow-top($length, $color: #DDD) {
+	@include -shadow-base(0, -#{$length/2}px, #{$length}px, 0, $color);
+}
+
+@mixin shadow-right($length, $color: #DDD) {
+	@include -shadow-base(#{$length/2}px, 0, #{$length}px, 0, $color);
+}
+
+@mixin shadow-bottom($length, $color: #DDD) {
+	@include -shadow-base(0, #{$length/2}px, #{$length}px, 0, $color);
+}
+
+@mixin shadow-left($length, $color: #DDD) {
+	@include -shadow-base(-#{$length}px, 0, #{$length}px, 0, $color);
+}
+
+/******************************* end: [shadow] *******************************/
+

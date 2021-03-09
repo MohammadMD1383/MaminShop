@@ -1,0 +1,61 @@
+/**************
+*  MAIN FILE  *
+**************/
+
+/**** start: [imports] ****/
+@use "var";
+@use "mixin";
+@import "font";
+@import "utility";
+/**** end: [imports] ****/
+
+/*********** start: [global styles] ***********/
+* {
+	font-family: Estedad, sans-serif;
+	font-weight: normal;
+}
+
+/*********** end: [global styles] ***********/
+
+/************************* start: [navbar] *************************/
+#top-navbar {
+	&-outer {
+		@include mixin.sticky-top(-(var.$navbar-diff-height));
+		height: var.$navbar-outer-height;
+		@include mixin.shadow-bottom(var.$navbar-outer-shadow-length);
+	}
+	
+	&-inner {
+		@include mixin.sticky-top(0);
+		height: var.$navbar-inner-height;
+	}
+}
+
+@include mixin.media-breakpoint-down(var.$md) {
+	#top-navbar-inner ul {
+		@include mixin.shadow(var.$navbar-inner-shadow-length);
+	}
+}
+
+#top-navbar > ul > li {
+	position: relative;
+	
+	&::after {
+		@include mixin.transition("width");
+		position: absolute;
+		display: inline-block;
+		content: "";
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 0;
+		height: 1px;
+		background-color: black;
+	}
+	
+	&:hover::after {
+		width: 100%;
+	}
+}
+
+/************************* end: [navbar] *************************/
