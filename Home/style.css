@@ -98,10 +98,10 @@
   position: relative;
 }
 #top-navbar > ul > li::after {
-  -webkit-transition:  width ease-in-out 0.2s;
-  -moz-transition:  width ease-in-out 0.2s;
-  -o-transition:  width ease-in-out 0.2s;
-  transition:  width ease-in-out 0.2s;
+  -webkit-transition:  width ease-in-out 0.15s;
+  -moz-transition:  width ease-in-out 0.15s;
+  -o-transition:  width ease-in-out 0.15s;
+  transition:  width ease-in-out 0.15s;
   position: absolute;
   display: inline-block;
   content: "";

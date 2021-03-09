@@ -41,7 +41,7 @@
 	position: relative;
 	
 	&::after {
-		@include mixin.transition("width");
+		@include mixin.transition("width", 0.15s);
 		position: absolute;
 		display: inline-block;
 		content: "";
