@@ -52,23 +52,23 @@
 	box-shadow: $x $y $blur $spread $color;
 }
 
-@mixin shadow($length, $color: #DDD) {
+@mixin shadow($length, $color: rgba(0, 0, 0, 0.2)) {
 	@include -shadow-base(0, 0, #{$length}px, #{$length/2}px, $color);
 }
 
-@mixin shadow-top($length, $color: #DDD) {
+@mixin shadow-top($length, $color: rgba(0, 0, 0, 0.2)) {
 	@include -shadow-base(0, -#{$length/2}px, #{$length}px, 0, $color);
 }
 
-@mixin shadow-right($length, $color: #DDD) {
+@mixin shadow-right($length, $color: rgba(0, 0, 0, 0.2)) {
 	@include -shadow-base(#{$length/2}px, 0, #{$length}px, 0, $color);
 }
 
-@mixin shadow-bottom($length, $color: #DDD) {
+@mixin shadow-bottom($length, $color: rgba(0, 0, 0, 0.2)) {
 	@include -shadow-base(0, #{$length/2}px, #{$length}px, 0, $color);
 }
 
-@mixin shadow-left($length, $color: #DDD) {
+@mixin shadow-left($length, $color: rgba(0, 0, 0, 0.2)) {
 	@include -shadow-base(-#{$length}px, 0, #{$length}px, 0, $color);
 }
 

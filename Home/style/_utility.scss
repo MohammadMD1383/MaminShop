@@ -2,9 +2,72 @@
 *  UTILITY CLASSES FILE  *
 *************************/
 
+/** start: [imports] **/
+@use "material";
+@use "mixin";
+/** end: [imports] **/
+
+/*********** start: [material colors classes] ***********/
+@each $chain, $list in material.$material-colors {
+	@each $name, $color in $list {
+		.bg-material-#{$chain}-#{$name} {
+			background-color: $color;
+		}
+		
+		.material-#{$chain}-#{$name} {
+			color: $color;
+		}
+	}
+}
+
+/*********** end: [material colors classes] ***********/
+
+/********** start: [material shadows classes] **********/
+$-shadow-sizes: (
+	"sm": 3,
+	"md": 5,
+	"lg": 8,
+	"xl": 10,
+	"xxl": 15,
+	"xxxl": 20
+);
+
+@each $type, $size in $-shadow-sizes {
+	.material-shadow-#{$type} {
+		&-all {
+			@include mixin.shadow($size)
+		}
+		
+		&-top {
+			@include mixin.shadow-top($size)
+		}
+		
+		&-right {
+			@include mixin.shadow-right($size)
+		}
+		
+		&-bottom {
+			@include mixin.shadow-bottom($size)
+		}
+		
+		&-left {
+			@include mixin.shadow-left($size)
+		}
+	}
+}
+
+/********** end: [material shadows classes] **********/
+
 /**
  * font icon
  */
 .font-icon {
 	font-family: font-icon;
+}
+
+/**
+ * disables user-select
+ */
+.no-user-select {
+	user-select: none;
 }
