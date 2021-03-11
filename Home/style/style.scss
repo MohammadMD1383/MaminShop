@@ -62,8 +62,27 @@
 
 /************************* end: [navbar] *************************/
 
+/******************** start: [product carousel] ********************/
 .carousel-img-container {
+	position: relative;
 	background-position: center;
 	background-repeat: no-repeat;
-	@include mixin.background-size(cover);
+	background-size: cover;
+	margin-bottom: #{var.$product-card-discount-margin}px;
+	
+	& > span {
+		position: absolute;
+		display: inline-block;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		line-height: #{var.$product-card-discount-size}px;
+		height: #{var.$product-card-discount-size}px;
+		width: #{var.$product-card-discount-size}px;
+		border-radius: 1000px;
+		@include mixin.shadow(5);
+	}
 }
+
+/******************** end: [product carousel] ********************/

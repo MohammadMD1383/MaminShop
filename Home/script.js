@@ -8,8 +8,12 @@ const screen_xxl = 1400;
 $(() => {
 	$('.owl-carousel').owlCarousel({
 		center: true,
+		rtl: true,
 		margin: 16,
-		padding: 8,
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
 		dots: false,
 		nav: false,
 		responsive: {

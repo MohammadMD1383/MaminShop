@@ -11,11 +11,11 @@
 @each $chain, $list in material.$material-colors {
 	@each $name, $color in $list {
 		.bg-material-#{$chain}-#{$name} {
-			background-color: $color;
+			background-color: $color !important;
 		}
 		
 		.material-#{$chain}-#{$name} {
-			color: $color;
+			color: $color !important;
 		}
 	}
 }
@@ -25,12 +25,12 @@
 /******* start: [material colors classes::hover] *******/
 @each $chain, $list in material.$material-colors {
 	@each $name, $color in $list {
-		.hover-bg-material-#{$chain}-#{$name} {
-			background-color: $color;
+		.hover-bg-material-#{$chain}-#{$name}:hover {
+			background-color: $color !important;
 		}
 		
-		.hover-material-#{$chain}-#{$name} {
-			color: $color;
+		.hover-material-#{$chain}-#{$name}:hover {
+			color: $color !important;
 		}
 	}
 }
@@ -50,39 +50,61 @@ $-shadow-sizes: (
 @each $type, $size in $-shadow-sizes {
 	.material-shadow-#{$type} {
 		&-all {
-			@include mixin.shadow($size)
+			@include mixin.shadow($size);
 		}
 		
 		&-top {
-			@include mixin.shadow-top($size)
+			@include mixin.shadow-top($size);
 		}
 		
 		&-right {
-			@include mixin.shadow-right($size)
+			@include mixin.shadow-right($size);
 		}
 		
 		&-bottom {
-			@include mixin.shadow-bottom($size)
+			@include mixin.shadow-bottom($size);
 		}
 		
 		&-left {
-			@include mixin.shadow-left($size)
+			@include mixin.shadow-left($size);
 		}
 	}
 }
 
 /********** end: [material shadows classes] **********/
 
+/**************** start: [transition] ****************/
+$-transition-timings: (
+	"slow": 0.3s,
+	"normal": 0.2s,
+	"fast": 0.1s
+);
+
+@each $timing, $amount in $-transition-timings {
+	.transition-#{$timing} {
+		transition: all ease-in-out #{$amount} !important;
+	}
+}
+
+/**************** end: [transition] ****************/
+
 /**
  * font icon
  */
 .font-icon {
-	font-family: font-icon;
+	font-family: font-icon !important;
 }
 
 /**
  * disables user-select
  */
 .no-user-select {
-	user-select: none;
+	user-select: none !important;
+}
+
+/**
+ * cursor changes to pointer
+ */
+.cursor-pointer {
+	cursor: pointer !important;
 }
