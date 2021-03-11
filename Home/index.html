@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="owl/owl.carousel.min.css">
+	<link rel="stylesheet" href="owl/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<script src="owl/owl.carousel.min.js"></script>
 	<script src="script.js"></script>
 	<title>Home Page</title>
 </head>
@@ -56,33 +58,169 @@
 
 <!-- start: [main::container] -->
 <div class="container-fluid mt-5 p-3">
-	<div class="container-fluid p-0 bg-material-light-blue-500 rounded-2 material-shadow-md-all">
-		<h2 class="h2 no-user-select text-center bg-material-light-blue-400 text-light p-3 rounded-2 shadow">جدیدترین محصولات</h2>
+	
+	<!-- start: [main::container::category] -->
+	<div class="container-fluid p-0 bg-material-blue-500 rounded-2 material-shadow-md-all">
+		<h2 class="h2 no-user-select text-center bg-material-blue-400 text-light p-3 m-0 rounded-2 shadow">جدیدترین محصولات</h2>
 		
 		<!-- start: [main::container::carousel] -->
-		<div class="owl-carousel row">
-			<div class="col">
-				<div class="card bg-light">
-					<img src="img/http-error-404-not-found.png" alt="" class="card-img-top"/>
-					<div class="card-body">
-						<div class="card-header text-center">امین کارویزی</div>
-						<div class="card-text text-end">قیمت: ۱۲٫۰۰۰ تومان</div>
-					</div>
+		<div class="owl-carousel p-3">
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
 				</div>
 			</div>
-			<div class="col">
-				<div class="card bg-light">
-					<img src="img/http-error-404-not-found.png" alt="" class="card-img-top"/>
-					<div class="card-body">
-						<div class="card-header text-center">امین کارویزی</div>
-						<div class="card-text text-end">قیمت: ۱۲٫۰۰۰ تومان</div>
-					</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
 				</div>
 			</div>
 		</div>
 		<!-- end: [main::container::carousel] -->
 	
 	</div>
+	<!-- end: [main::container::category] -->
+	
+	<!-- start: [main::container::category] -->
+	<div class="container-fluid p-0 bg-material-green-500 rounded-2 material-shadow-md-all">
+		<h2 class="h2 no-user-select text-center bg-material-green-400 text-light p-3 m-0 rounded-2 shadow">پرفروش‌ترین محصولات</h2>
+		
+		<!-- start: [main::container::carousel] -->
+		<div class="owl-carousel p-3">
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+		</div>
+		<!-- end: [main::container::carousel] -->
+	
+	</div>
+	<!-- end: [main::container::category] -->
+	
+	<!-- start: [main::container::category] -->
+	<div class="container-fluid p-0 bg-material-deep-orange-500 rounded-2 material-shadow-md-all">
+		<h2 class="h2 no-user-select text-center bg-material-deep-orange-400 text-light p-3 m-0 rounded-2 shadow">تخفیفات ویژه</h2>
+		
+		<!-- start: [main::container::carousel] -->
+		<div class="owl-carousel p-3">
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/http-error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('img/error-404-not-found.png'); height: 300px"></div>
+				<div class="card-body">
+					<div class="card-title">Material</div>
+					<div class="card-text">Price: $32,000</div>
+				</div>
+			</div>
+		</div>
+		<!-- end: [main::container::carousel] -->
+	
+	</div>
+	<!-- end: [main::container::category] -->
+
 </div>
 <!-- end: [main::container] -->
 

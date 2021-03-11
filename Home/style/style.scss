@@ -21,6 +21,7 @@
 /************************* start: [navbar] *************************/
 #top-navbar {
 	&-outer {
+		z-index: 999;
 		@include mixin.sticky-top(-(var.$navbar-diff-height));
 		height: var.$navbar-outer-height;
 		@include mixin.shadow-bottom(var.$navbar-outer-shadow-length);
@@ -60,3 +61,9 @@
 }
 
 /************************* end: [navbar] *************************/
+
+.carousel-img-container {
+	background-position: center;
+	background-repeat: no-repeat;
+	@include mixin.background-size(cover);
+}

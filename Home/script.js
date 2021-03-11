@@ -1,3 +1,4 @@
+const screen_xs = 0;
 const screen_sm = 576;
 const screen_md = 768;
 const screen_lg = 992;
@@ -6,22 +7,16 @@ const screen_xxl = 1400;
 
 $(() => {
 	$('.owl-carousel').owlCarousel({
-		loop: true,
-		margin: 10,
+		center: true,
+		margin: 16,
+		padding: 8,
+		dots: false,
 		nav: false,
 		responsive: {
-			0: {
-				items: 1
-			},
-			screen_sm: {
-				items: 2
-			},
-			screen_md: {
-				items: 4
-			},
-			screen_lg: {
-				items: 6
-			}
+			0: {items: 1},
+			576: {items: 2},
+			992: {items: 3},
+			1400: {items: 4},
 		}
 	});
 });

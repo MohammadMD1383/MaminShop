@@ -22,6 +22,21 @@
 
 /*********** end: [material colors classes] ***********/
 
+/******* start: [material colors classes::hover] *******/
+@each $chain, $list in material.$material-colors {
+	@each $name, $color in $list {
+		.hover-bg-material-#{$chain}-#{$name} {
+			background-color: $color;
+		}
+		
+		.hover-material-#{$chain}-#{$name} {
+			color: $color;
+		}
+	}
+}
+
+/******* end: [material colors classes::hover] *******/
+
 /********** start: [material shadows classes] **********/
 $-shadow-sizes: (
 	"sm": 3,
