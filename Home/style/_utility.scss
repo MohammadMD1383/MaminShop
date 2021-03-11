@@ -69,6 +69,28 @@ $-shadow-sizes: (
 			@include mixin.shadow-left($size);
 		}
 	}
+	
+	.hover-material-shadow-#{$type} {
+		&-all:hover {
+			@include mixin.shadow($size);
+		}
+		
+		&-top:hover {
+			@include mixin.shadow-top($size);
+		}
+		
+		&-right:hover {
+			@include mixin.shadow-right($size);
+		}
+		
+		&-bottom:hover {
+			@include mixin.shadow-bottom($size);
+		}
+		
+		&-left:hover {
+			@include mixin.shadow-left($size);
+		}
+	}
 }
 
 /********** end: [material shadows classes] **********/

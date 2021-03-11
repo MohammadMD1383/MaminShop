@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*******************
 *  VARIABLES FILE  *
 *******************/
@@ -7,6 +8,8 @@
 /************************ end: [navbar] ************************/
 /******************** start: [product card] ********************/
 /******************** end: [product card] ********************/
+/*********************** start: [svg] ***********************/
+/*********************** end: [svg] ***********************/
 /****************
 *  MIXINS FILE  *
 ****************/
@@ -25,32 +28,32 @@
 /**** start: [imports] ****/
 @font-face {
   font-family: Estedad;
-  src: url("../font/Estedad-Thin.ttf");
+  src: url("font/Estedad-Thin.ttf");
   font-weight: 100;
 }
 @font-face {
   font-family: Estedad;
-  src: url("../font/Estedad-Light.ttf");
+  src: url("font/Estedad-Light.ttf");
   font-weight: 300;
 }
 @font-face {
   font-family: Estedad;
-  src: url("../font/Estedad-Medium.ttf");
+  src: url("font/Estedad-Medium.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: Estedad;
-  src: url("../font/Estedad-Bold.ttf");
+  src: url("font/Estedad-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: Estedad;
-  src: url("../font/Estedad-Black.ttf");
+  src: url("font/Estedad-Black.ttf");
   font-weight: 900;
 }
 @font-face {
   font-family: font-icon;
-  src: url("../font/segmdl2.ttf");
+  src: url("font/segmdl2.ttf");
 }
 /****************
 *  MIXINS FILE  *
@@ -4185,6 +4188,37 @@
   box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
+.hover-material-shadow-sm-all:hover {
+  -webkit-box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-sm-top:hover {
+  -webkit-box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-sm-right:hover {
+  -webkit-box-shadow: 1.5px 0 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1.5px 0 3px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 1.5px 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1.5px 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-sm-bottom:hover {
+  -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-sm-left:hover {
+  -webkit-box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
 .material-shadow-md-all {
   -webkit-box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
@@ -4210,6 +4244,37 @@
   box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .material-shadow-md-left {
+  -webkit-box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hover-material-shadow-md-all:hover {
+  -webkit-box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-md-top:hover {
+  -webkit-box-shadow: 0 -2.5px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -2.5px 5px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 -2.5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -2.5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-md-right:hover {
+  -webkit-box-shadow: 2.5px 0 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2.5px 0 5px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2.5px 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2.5px 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-md-bottom:hover {
+  -webkit-box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-md-left:hover {
   -webkit-box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.2);
   -o-box-shadow: -5px 0 5px 0 rgba(0, 0, 0, 0.2);
@@ -4247,6 +4312,37 @@
   box-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.hover-material-shadow-lg-all:hover {
+  -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-lg-top:hover {
+  -webkit-box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-lg-right:hover {
+  -webkit-box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-lg-bottom:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-lg-left:hover {
+  -webkit-box-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .material-shadow-xl-all {
   -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
@@ -4272,6 +4368,37 @@
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .material-shadow-xl-left {
+  -webkit-box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hover-material-shadow-xl-all:hover {
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xl-top:hover {
+  -webkit-box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xl-right:hover {
+  -webkit-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xl-bottom:hover {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xl-left:hover {
   -webkit-box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
   -o-box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -4309,6 +4436,37 @@
   box-shadow: -15px 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+.hover-material-shadow-xxl-all:hover {
+  -webkit-box-shadow: 0 0 15px 7.5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 15px 7.5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 15px 7.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 7.5px rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxl-top:hover {
+  -webkit-box-shadow: 0 -7.5px 15px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -7.5px 15px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 -7.5px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -7.5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxl-right:hover {
+  -webkit-box-shadow: 7.5px 0 15px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 7.5px 0 15px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 7.5px 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 7.5px 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxl-bottom:hover {
+  -webkit-box-shadow: 0 7.5px 15px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 7.5px 15px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 7.5px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7.5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxl-left:hover {
+  -webkit-box-shadow: -15px 0 15px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -15px 0 15px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -15px 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -15px 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
 .material-shadow-xxxl-all {
   -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
@@ -4334,6 +4492,37 @@
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .material-shadow-xxxl-left {
+  -webkit-box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hover-material-shadow-xxxl-all:hover {
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxxl-top:hover {
+  -webkit-box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxxl-right:hover {
+  -webkit-box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxxl-bottom:hover {
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.hover-material-shadow-xxxl-left:hover {
   -webkit-box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.2);
   -o-box-shadow: -20px 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -4459,6 +4648,54 @@
   box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
 }
 
+.product-card {
+  -webkit-transition:  transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  -moz-transition:  transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  -o-transition:  transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  transition:  transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  transform: translateY(0) scale(1);
+}
+.product-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.owl-stage {
+  padding: 10px 0 !important;
+}
+
 /******************** end: [product carousel] ********************/
+/*********************** start: [footer] ***********************/
+footer .footer-link {
+  direction: rtl;
+}
+footer .footer-link::before {
+  content: "";
+  vertical-align: middle;
+  margin-left: 5px;
+  font-family: font-icon;
+}
+
+#email-newsletter::placeholder {
+  text-align: right;
+}
+
+.social-media-svg {
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.social-media-svg > svg {
+  -webkit-transition:  fill ease-in-out 0.2s;
+  -moz-transition:  fill ease-in-out 0.2s;
+  -o-transition:  fill ease-in-out 0.2s;
+  transition:  fill ease-in-out 0.2s;
+  fill: #757575;
+}
+.social-media-svg > svg:hover {
+  fill: black;
+}
+
+/*********************** end: [footer] ***********************/
 
 /*# sourceMappingURL=style.css.map */
