@@ -4674,6 +4674,9 @@ footer .footer-link::before {
   margin-left: 5px;
   font-family: font-icon;
 }
+footer .footer-link:hover {
+  background-image: linear-gradient(to left, #CFD8DC, transparent);
+}
 
 #email-newsletter::placeholder {
   text-align: right;

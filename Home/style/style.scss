@@ -110,6 +110,10 @@ footer .footer-link {
 		margin-left: 5px;
 		font-family: font-icon;
 	}
+	
+	&:hover {
+		background-image: linear-gradient(to left, material.material-color("blue-grey", "100"), transparent);
+	}
 }
 
 #email-newsletter::placeholder {
