@@ -1,0 +1,161 @@
+/*************************
+*  UTILITY CLASSES FILE  *
+*************************/
+
+/** start: [imports] **/
+@use "material";
+@use "shadow";
+/** end: [imports] **/
+
+/*********** start: [material color classes] ***********/
+@each $chain, $list in material.$material-colors {
+	@each $name, $color in $list {
+		.bg-material-#{$chain}-#{$name} {
+			background-color: $color !important;
+		}
+		
+		.hover-bg-material-#{$chain}-#{$name}:hover {
+			background-color: $color !important;
+		}
+		
+		.material-#{$chain}-#{$name} {
+			color: $color !important;
+		}
+		
+		.hover-material-#{$chain}-#{$name}:hover {
+			color: $color !important;
+		}
+	}
+}
+
+/*********** end: [material color classes] ***********/
+
+/********** start: [shadow classes] **********/
+$-shadow-sizes: (
+	"sm": 3,
+	"md": 5,
+	"lg": 8,
+	"xl": 10,
+	"xxl": 15,
+	"xxxl": 20
+);
+
+@each $type, $size in $-shadow-sizes {
+	.material-shadow-#{$type} {
+		&-all {
+			@include shadow.shadow-all($size);
+		}
+		
+		&-top {
+			@include shadow.shadow-top($size);
+		}
+		
+		&-bottom {
+			@include shadow.shadow-bottom($size);
+		}
+		
+		&-right {
+			@include shadow.shadow-right($size);
+		}
+		
+		&-left {
+			@include shadow.shadow-left($size);
+		}
+		
+		&-top-right {
+			@include shadow.shadow-top-right($size);
+		}
+		
+		&-top-left {
+			@include shadow.shadow-top-left($size);
+		}
+		
+		&-bottom-right {
+			@include shadow.shadow-bottom-right($size);
+		}
+		
+		&-bottom-left {
+			@include shadow.shadow-bottom-left($size);
+		}
+	}
+	
+	.hover-material-shadow-#{$type} {
+		&-all:hover {
+			@include shadow.shadow-all($size);
+		}
+		
+		&-top:hover {
+			@include shadow.shadow-top($size);
+		}
+		
+		&-bottom:hover {
+			@include shadow.shadow-bottom($size);
+		}
+		
+		&-right:hover {
+			@include shadow.shadow-right($size);
+		}
+		
+		&-left:hover {
+			@include shadow.shadow-left($size);
+		}
+		
+		&-top-right:hover {
+			@include shadow.shadow-top-right($size);
+		}
+		
+		&-top-left:hover {
+			@include shadow.shadow-top-left($size);
+		}
+		
+		&-bottom-right:hover {
+			@include shadow.shadow-bottom-right($size);
+		}
+		
+		&-bottom-left:hover {
+			@include shadow.shadow-bottom-left($size);
+		}
+	}
+}
+
+/********** end: [shadow classes] **********/
+
+/**************** start: [transition] ****************/
+$-transition-timings: (
+	"slow": 0.3s,
+	"normal": 0.2s,
+	"fast": 0.1s
+);
+
+@each $timing, $amount in $-transition-timings {
+	.transition-#{$timing} {
+		transition: all ease-in-out #{$amount} !important;
+	}
+}
+
+/**************** end: [transition] ****************/
+
+/************* start: [cursor] *************/
+$-cursor-types: (default, pointer);
+
+@each $type in $-cursor-types {
+	.cursor-#{$type} {
+		cursor: $type !important;
+	}
+}
+
+/************* end: [cursor] *************/
+
+/**
+ * font icon
+ */
+.font-icon {
+	font-family: font-icon !important;
+}
+
+/**
+ * disables user-select
+ */
+.no-user-select {
+	user-select: none !important;
+}

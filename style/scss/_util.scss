@@ -1,0 +1,44 @@
+/******* start: [sticky] *******/
+@mixin sticky-top($top) {
+	position: -webkit-sticky;
+	position: sticky;
+	top: $top;
+}
+
+@mixin sticky-bottom($bottom) {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: $bottom;
+}
+
+@mixin sticky-right($right) {
+	position: -webkit-sticky;
+	position: sticky;
+	right: $right;
+}
+
+@mixin sticky-left($left) {
+	position: -webkit-sticky;
+	position: sticky;
+	left: $left;
+}
+
+/******* end: [sticky] *******/
+
+/********************* start: [transition] *********************/
+@function -generate-transition($props, $time) {
+	$str: "";
+	@each $prop in $props {
+		$str: "#{$str} #{$prop} ease-in-out #{$time},";
+	}
+	@return unquote(str-slice($str, 1, -2));
+}
+
+@mixin transition($props, $time: 0.2s) {
+	-webkit-transition: -generate-transition($props, $time);
+	-moz-transition: -generate-transition($props, $time);
+	-o-transition: -generate-transition($props, $time);
+	transition: -generate-transition($props, $time);
+}
+
+/********************* end: [transition] *********************/

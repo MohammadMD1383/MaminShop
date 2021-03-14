@@ -1,0 +1,22 @@
+/***********************
+*  MEDIA QUERIES FILE  *
+***********************/
+
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin media-breakpoint-up($width) {
+	@media (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down($width) {
+	@media (max-width: $width) {
+		@content;
+	}
+}

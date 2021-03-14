@@ -1,0 +1,42 @@
+@mixin -shadow-base($x, $y, $blur, $spread, $color) {
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	-moz-box-shadow: $x $y $blur $spread $color;
+	-o-box-shadow: $x $y $blur $spread $color;
+	box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin shadow-all($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(0, 0, #{$length}px, #{$length/2}px, $color);
+}
+
+@mixin shadow-top($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(0, -#{$length/2}px, #{$length}px, 0, $color);
+}
+
+@mixin shadow-bottom($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(0, #{$length/2}px, #{$length}px, 0, $color);
+}
+
+@mixin shadow-right($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(#{$length/2}px, 0, #{$length}px, 0, $color);
+}
+
+@mixin shadow-left($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(-#{$length}px, 0, #{$length}px, 0, $color);
+}
+
+@mixin shadow-top-right($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(#{$length/2}px, -#{$length/2}px, #{$length}px, 0, $color);
+}
+
+@mixin shadow-top-left($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(-#{$length/2}px, -#{$length/2}px, #{$length}px, 0, $color);
+}
+
+@mixin shadow-bottom-right($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(#{$length/2}px, #{$length/2}px, #{$length}px, 0, $color);
+}
+
+@mixin shadow-bottom-left($length, $color: rgba(0, 0, 0, 0.2)) {
+	@include -shadow-base(-#{$length/2}px, #{$length/2}px, #{$length}px, 0, $color);
+}

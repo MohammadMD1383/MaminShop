@@ -1,13 +1,16 @@
-/**************
-*  MAIN FILE  *
-**************/
+/********************
+*  HOME STYLE FILE  *
+********************/
 
 /**** start: [imports] ****/
 @use "var";
-@use "mixin";
-@use "material";
-@import "font";
-@import "utility";
+@use "../../style/scss/material";
+@use "../../style/scss/util";
+@use "../../style/scss/shadow";
+@use "../../style/scss/media";
+
+@import url("../style/font.css");
+@import url("../style/utility.css");
 /**** end: [imports] ****/
 
 /*********** start: [global styles] ***********/
@@ -22,20 +25,20 @@
 #top-navbar {
 	&-outer {
 		z-index: 999;
-		@include mixin.sticky-top(-(var.$navbar-diff-height));
+		@include util.sticky-top(-(var.$navbar-diff-height));
 		height: var.$navbar-outer-height;
-		@include mixin.shadow-bottom(var.$navbar-outer-shadow-length);
+		@include shadow.shadow-bottom(var.$navbar-outer-shadow-length);
 	}
 	
 	&-inner {
-		@include mixin.sticky-top(0);
+		@include util.sticky-top(0);
 		height: var.$navbar-inner-height;
 	}
 }
 
-@include mixin.media-breakpoint-down(var.$md) {
+@include media.media-breakpoint-down(media.$md) {
 	#top-navbar-inner ul {
-		@include mixin.shadow(var.$navbar-inner-shadow-length);
+		@include shadow.shadow-all(var.$navbar-inner-shadow-length);
 	}
 }
 
@@ -43,7 +46,7 @@
 	position: relative;
 	
 	&::after {
-		@include mixin.transition("width", 0.15s);
+		@include util.transition("width", 0.15s);
 		position: absolute;
 		display: inline-block;
 		content: "";
@@ -81,12 +84,12 @@
 		height: #{var.$product-card-discount-size}px;
 		width: #{var.$product-card-discount-size}px;
 		border-radius: 1000px;
-		@include mixin.shadow(5);
+		@include shadow.shadow-all(5);
 	}
 }
 
 .product-card {
-	@include mixin.transition(["transform", "box-shadow"]);
+	@include util.transition(["transform", "box-shadow"]);
 	transform: translateY(0) scale(1);
 	
 	&:hover {
@@ -112,7 +115,7 @@ footer .footer-link {
 	}
 	
 	&:hover {
-		background-image: linear-gradient(to left, material.material-color("blue-grey", "100"), transparent);
+		background-image: linear-gradient(to left, material.get-material-color("blue-grey", "100"), transparent);
 	}
 }
 
@@ -127,8 +130,8 @@ footer .footer-link {
 	height: var.$social-media-svg-size;
 	
 	& > svg {
-		@include mixin.transition("fill");
-		fill: material.material-color("grey", "600");
+		@include util.transition("fill");
+		fill: material.get-material-color("grey", "600");
 		
 		&:hover {
 			fill: black;
