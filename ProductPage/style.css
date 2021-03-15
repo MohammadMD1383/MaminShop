@@ -1,1 +1,1 @@
-@import"../style/hf.css"/*# sourceMappingURL=style.css.map */
+@import"../style/hf.css";@import"../Home/style.css";@media(min-width: 768px){#product-detail-floating{position:-webkit-sticky;position:sticky;top:80px}}@media(max-width: 768px){.product-description-col:nth-child(2n-1){margin-bottom:1rem}}.product-description-col:nth-child(2n){margin-bottom:1rem}.product-description-col:last-child{margin-bottom:0}.product-comment-col{margin-bottom:1rem}.product-comment-col:last-child{margin-bottom:0}/*# sourceMappingURL=style.css.map */

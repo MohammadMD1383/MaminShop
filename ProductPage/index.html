@@ -12,6 +12,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 	<script src="../owl/owl.carousel.min.js"></script>
 	<script src="../script/include-html.min.js"></script>
+	<script src="script.min.js"></script>
 	<title>Product Page</title>
 </head>
 <body>
@@ -21,7 +22,240 @@
 <!-- end: [import-header] -->
 
 <!-- start: [main::container] -->
-<main class="container-fluid my-5 p-3">some content</main>
+<main class="container-fluid my-5 p-3">
+	
+	<!-- start: [main::product::container] -->
+	<div class="container-fluid p-0 bg-light rounded-2">
+		<h2 class="no-user-select text-center bg-light text-dark p-3 m-0 rounded-2 shadow">ارور ۴۰۴ مدل خفن</h2>
+		
+		<div class="row p-3 flex-row-reverse no-user-select">
+			
+			<!-- start: [main::product::container::img] -->
+			<div class="col-md-8">
+				<img src="../Home/img/error-404-not-found.png" class="w-100 rounded-2" alt>
+			</div>
+			<!-- end: [main::product::container::img] -->
+			
+			<!-- start: [main::product::container::detail] -->
+			<div class="col-md-4">
+				<ul id="product-detail-floating" class="list-group list-group-flush rounded-2 material-shadow-sm-all mt-md-0 mt-3">
+					
+					<li class="list-group-item d-flex flex-row-reverse justify-content-between hover-bg-material-grey-100">
+						قیمت
+						<span dir="rtl">
+							<span class="text-muted text-decoration-line-through">۱۲٫۰۰۰</span>
+							۶٫۰۰۰ تومان
+						</span>
+					</li>
+					
+					<li class="list-group-item d-flex flex-row-reverse justify-content-between hover-bg-material-grey-100">
+						تخفیف
+						<span dir="rtl">۵۰٪</span>
+					</li>
+					
+					<li class="list-group-item d-flex flex-row-reverse justify-content-between hover-bg-material-grey-100">
+						موجودی
+						<span dir="rtl">۷۹ عدد</span>
+					</li>
+					
+					<li class="list-group-item d-flex flex-row-reverse justify-content-between hover-bg-material-grey-100">
+						گروه
+						<span dir="rtl">تصاویر</span>
+					</li>
+					
+					<li class="list-group-item d-flex flex-row-reverse justify-content-around">
+						<button type="button" class="btn btn-primary" dir="rtl">
+							<span class="font-icon align-middle">&#xE7BF;</span>
+							افزودن به سبد خرید
+						</button>
+						<button type="button" class="btn btn-secondary">بازگشت</button>
+					</li>
+				
+				</ul>
+			</div>
+			<!-- end: [main::product::container::detail] -->
+		
+		</div>
+	</div>
+	<!-- end: [main::product::container] -->
+	
+	<!-- start: [main::product-detail] -->
+	<div class="container-fluid p-0 mt-5 bg-material-light-blue-500 rounded-2 no-user-select">
+		<h2 class="text-center text-light m-0 p-3 bg-material-light-blue-400 rounded-2 shadow">توضیحات محصول</h2>
+		
+		<!-- start: [product::detail-container] -->
+		<div class="row row-cols-1 row-cols-md-2 text-end p-3 flex-row-reverse">
+			
+			<!-- start: [product::detail] -->
+			<div class="col product-description-col">
+				<div class="bg-white p-3 rounded-2 material-shadow-sm-all">
+					<h4>توضیحات</h4>
+					توضیحات در مورد این چیز خوب خیلی خوب خوب خوب و عالی
+				</div>
+			</div>
+			<!-- end: [product::detail] -->
+			
+			<!-- start: [product::detail] -->
+			<div class="col product-description-col">
+				<div class="bg-white p-3 rounded-2 material-shadow-sm-all">
+					<h4>توضیحات ۲</h4>
+					توضیحات نااااااااب اووف اوف
+				</div>
+			</div>
+			<!-- end: [product::detail] -->
+			
+			<!-- start: [product::detail] -->
+			<div class="col product-description-col">
+				<div class="bg-white p-3 rounded-2 material-shadow-sm-all">
+					<h4>توضیحات ۲</h4>
+					توضیحات نااااااااب اووف اوف
+				</div>
+			</div>
+			<!-- end: [product::detail] -->
+			
+			<!-- start: [product::detail] -->
+			<div class="col product-description-col">
+				<div class="bg-white p-3 rounded-2 material-shadow-sm-all">
+					<h4>توضیحات ۲</h4>
+					توضیحات نااااااااب اووف اوف
+				</div>
+			</div>
+			<!-- end: [product::detail] -->
+		
+		</div>
+		<!-- end: [product::detail-container] -->
+	
+	</div>
+	<!-- end: [main::product-detail] -->
+	
+	<!-- start: [related-products] -->
+	<div class="container-fluid p-0 mt-5 bg-material-green-500 rounded-2 no-user-select">
+		<h2 class="m-0 p-3 text-light text-center shadow bg-material-green-400 rounded-2">دیگر محصولات</h2>
+		
+		<div class="owl-carousel p-3">
+			<div class="card cursor-pointer hover-material-shadow-xl-bottom product-card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('../Home/img/error-404-not-found.png'); height: 200px"></div>
+				<div class="card-body text-center pt-0">
+					<div class="card-title">شلوار جین</div>
+					<div class="card-text"><span>۱۲٫۰۰۰</span>تومان</div>
+				</div>
+			</div>
+			<div class="card cursor-pointer hover-material-shadow-xl-bottom product-card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('../Home/img/http-error-404-not-found.png'); height: 200px">
+					<span class="bg-material-green-600 text-light">۷۵٪</span>
+				</div>
+				<div class="card-body text-center pt-0">
+					<div class="card-title">شلوار جین</div>
+					<div class="card-text">
+						<span class="text-decoration-line-through text-muted">۱۲٫۰۰۰</span>
+						<span>۳٫۰۰۰</span>
+						تومان
+					</div>
+				</div>
+			</div>
+			<div class="card cursor-pointer hover-material-shadow-xl-bottom product-card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('../Home/img/error-404-not-found.png'); height: 200px"></div>
+				<div class="card-body text-center pt-0">
+					<div class="card-title">شلوار جین</div>
+					<div class="card-text"><span>۱۲٫۰۰۰</span>تومان</div>
+				</div>
+			</div>
+			<div class="card cursor-pointer hover-material-shadow-xl-bottom product-card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('../Home/img/http-error-404-not-found.png'); height: 200px"></div>
+				<div class="card-body text-center pt-0">
+					<div class="card-title">شلوار جین</div>
+					<div class="card-text"><span>۱۲٫۰۰۰</span>تومان</div>
+				</div>
+			</div>
+			<div class="card cursor-pointer hover-material-shadow-xl-bottom product-card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('../Home/img/error-404-not-found.png'); height: 200px"></div>
+				<div class="card-body text-center pt-0">
+					<div class="card-title">شلوار جین</div>
+					<div class="card-text"><span>۱۲٫۰۰۰</span>تومان</div>
+				</div>
+			</div>
+			<div class="card cursor-pointer hover-material-shadow-xl-bottom product-card">
+				<div class="card-img-top carousel-img-container" style="background-image: url('../Home/img/http-error-404-not-found.png'); height: 200px"></div>
+				<div class="card-body text-center pt-0">
+					<div class="card-title">شلوار جین</div>
+					<div class="card-text"><span>۱۲٫۰۰۰</span>تومان</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: [related-products] -->
+	
+	<!-- start: [product::comments-container] -->
+	<div class="container-fluid p-0 mt-5 bg-material-orange-400 rounded-2 no-user-select">
+		<h2 class="m-0 p-3 text-light text-center shadow bg-material-orange-300 rounded-2">نظرات</h2>
+		
+		<div class="container-md p-3 text-end">
+			
+			<!-- start: [comment] -->
+			<div class="product-comment-col bg-white p-3 rounded-2 material-shadow-sm-all">
+				<div class="d-flex justify-content-between flex-row-reverse text-secondary border-bottom mb-3">
+					<span>علی احمدی</span>
+					<span>۱۲:۲۴ - ۱۳۹۹٫۱۰٫۲۳</span>
+				</div>
+				من خیلی راضی بودم. ممنون از شما
+			</div>
+			<!-- end: [comment] -->
+			
+			<!-- start: [comment] -->
+			<div class="product-comment-col bg-white p-3 rounded-2 material-shadow-sm-all">
+				<div class="d-flex justify-content-between flex-row-reverse text-secondary border-bottom mb-3">
+					<span>علی احمدی</span>
+					<span>۱۲:۲۴ - ۱۳۹۹٫۱۰٫۲۳</span>
+				</div>
+				من خیلی راضی بودم. ممنون از شما
+			</div>
+			<!-- end: [comment] -->
+			
+			<!-- start: [comment] -->
+			<div class="product-comment-col bg-white p-3 rounded-2 material-shadow-sm-all">
+				<div class="d-flex justify-content-between flex-row-reverse text-secondary border-bottom mb-3">
+					<span>علی احمدی</span>
+					<span>۱۲:۲۴ - ۱۳۹۹٫۱۰٫۲۳</span>
+				</div>
+				من خیلی راضی بودم. ممنون از شما
+			</div>
+			<!-- end: [comment] -->
+			
+			<!-- start: [comment] -->
+			<div class="product-comment-col bg-white p-3 rounded-2 material-shadow-sm-all">
+				<div class="d-flex justify-content-between flex-row-reverse text-secondary border-bottom mb-3">
+					<span>علی احمدی</span>
+					<span>۱۲:۲۴ - ۱۳۹۹٫۱۰٫۲۳</span>
+				</div>
+				من خیلی راضی بودم. ممنون از شما
+			</div>
+			<!-- end: [comment] -->
+			
+			<!-- start: [comment] -->
+			<div class="product-comment-col bg-white p-3 rounded-2 material-shadow-sm-all">
+				<div class="d-flex justify-content-between flex-row-reverse text-secondary border-bottom mb-3">
+					<span>علی احمدی</span>
+					<span>۱۲:۲۴ - ۱۳۹۹٫۱۰٫۲۳</span>
+				</div>
+				من خیلی راضی بودم. ممنون از شما
+			</div>
+			<!-- end: [comment] -->
+			
+			<!-- start: [comment] -->
+			<div class="product-comment-col bg-white p-3 rounded-2 material-shadow-sm-all">
+				<div class="d-flex justify-content-between flex-row-reverse text-secondary border-bottom mb-3">
+					<span>علی احمدی</span>
+					<span>۱۲:۲۴ - ۱۳۹۹٫۱۰٫۲۳</span>
+				</div>
+				من خیلی راضی بودم. ممنون از شما
+			</div>
+			<!-- end: [comment] -->
+		
+		</div>
+	</div>
+	<!-- end: [product::comments-container] -->
+
+</main>
 <!-- end: [main::container] -->
 
 <!-- start: [import-footer] -->

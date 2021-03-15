@@ -3,7 +3,51 @@
 ****************************/
 
 /********** start: [imports] **********/
+@use "../../style/scss/var";
+@use "../../style/scss/util";
+@use "../../style/scss/media";
+@use "../../style/scss/shadow";
+
 @import url("../style/hf.css");
+@import url("../Home/style.css");
 /********** end: [imports] **********/
 
+/****** start: [product detail] ******/
+@include media.media-breakpoint-up(media.$md) {
+	#product-detail-floating {
+		@include util.sticky-top(var.$navbar-inner-height + 20px);
+	}
+}
+
+/****** end: [product detail] ******/
+
+/************* start: [product description] *************/
+@include media.media-breakpoint-down(media.$md) {
+	.product-description-col:nth-child(2n-1) {
+		margin-bottom: 1rem;
+	}
+}
+
+.product-description-col {
+	&:nth-child(2n) {
+		margin-bottom: 1rem;
+	}
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/************* end: [product description] *************/
+
+/**** start: [product comment] ****/
+.product-comment-col {
+	margin-bottom: 1rem;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/**** end: [product comment] ****/
 
