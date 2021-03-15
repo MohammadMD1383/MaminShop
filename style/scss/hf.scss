@@ -1,0 +1,104 @@
+/*********************************
+*  HEADER AND FOOTER STYLE FILE  *
+*********************************/
+
+/**** start: [imports] ****/
+@use "util";
+@use "shadow";
+@use "media";
+@use "material";
+@use "var";
+
+@import url("font.css");
+@import url("utility.css");
+/**** end: [imports] ****/
+
+/*********** start: [global styles] ***********/
+* {
+	font-family: Estedad, sans-serif;
+	font-weight: normal;
+}
+
+/*********** end: [global styles] ***********/
+
+/************************* start: [header] *************************/
+#top-navbar {
+	&-outer {
+		z-index: 999;
+		@include util.sticky-top(-(var.$navbar-diff-height));
+		height: var.$navbar-outer-height;
+		@include shadow.shadow-bottom(var.$navbar-outer-shadow-length);
+	}
+	
+	&-inner {
+		@include util.sticky-top(0);
+		height: var.$navbar-inner-height;
+	}
+}
+
+@include media.media-breakpoint-down(media.$md) {
+	#top-navbar-inner ul {
+		@include shadow.shadow-all(var.$navbar-inner-shadow-length);
+	}
+}
+
+#top-navbar > ul > li {
+	position: relative;
+	
+	&::after {
+		@include util.transition("width", 0.15s);
+		position: absolute;
+		display: inline-block;
+		content: "";
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 0;
+		height: 1px;
+		background-color: black;
+	}
+	
+	&:hover::after {
+		width: 100%;
+	}
+}
+
+/************************* end: [header] *************************/
+
+/*********************** start: [footer] ***********************/
+footer .footer-link {
+	direction: rtl;
+	
+	&::before {
+		content: '\E973';
+		vertical-align: middle;
+		margin-left: 5px;
+		font-family: font-icon;
+	}
+	
+	&:hover {
+		background-image: linear-gradient(to left, material.get-material-color("blue-grey", "100"), transparent);
+	}
+}
+
+#email-newsletter::placeholder {
+	text-align: right;
+}
+
+.social-media-svg {
+	display: inline-block;
+	cursor: pointer;
+	width: var.$social-media-svg-size;
+	height: var.$social-media-svg-size;
+	
+	& > svg {
+		@include util.transition("fill");
+		fill: material.get-material-color("grey", "600");
+		
+		&:hover {
+			fill: black;
+		}
+	}
+}
+
+/*********************** end: [footer] ***********************/

@@ -1,0 +1,16 @@
+/*******************
+*  VARIABLES FILE  *
+*******************/
+
+/************************ start: [navbar] ************************/
+$navbar-outer-height: 120px;
+$navbar-inner-height: 60px;
+$navbar-diff-height: $navbar-outer-height - $navbar-inner-height;
+
+$navbar-outer-shadow-length: 15;
+$navbar-inner-shadow-length: 5;
+/************************ end: [navbar] ************************/
+
+/*********************** start: [svg] ***********************/
+$social-media-svg-size: 30px;
+/*********************** end: [svg] ***********************/
